@@ -43,8 +43,20 @@ The default Groovy controller included in this plugin will lookup a bean from th
 
 # Styling
 
-The styles of the Contact Form plugin are based on Bootstrap 5 forms components. To override styles you can use 
-bootstrap form themes, or apply your own styles matching the classes used by [Bootstrap](https://getbootstrap.com/docs/5.0/forms/overview/).
+The styles of the Contact Form plugin are based on Bootstrap 5 forms components, using Bootstrap's 
+[build tools](https://getbootstrap.com/docs/5.0/getting-started/build-tools/#sass):
+
+```
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+@import "forms";
+```
+
+To override styles you can use bootstrap form themes, or apply your own styles matching the classes used by 
+[Bootstrap](https://getbootstrap.com/docs/5.0/forms/overview/).
 
 ## Custom elements (not matching Bootstrap) CSS
 
@@ -54,3 +66,8 @@ bootstrap form themes, or apply your own styles matching the classes used by [Bo
 | .form-title | Styles applied to the component's title. |
 | .submit-btn | Styles applied to the submit button. |
 | .form-section | Styles applied to each form section. |
+
+# Form Validation
+
+Form validation is performed using HTML5 form validation, following Bootstrap's mechanisms, for more information, check
+[here](https://getbootstrap.com/docs/5.0/forms/validation/). 
