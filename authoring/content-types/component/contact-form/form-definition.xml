@@ -380,7 +380,7 @@
 						<id>required_b</id>
 						<iceId></iceId>
 						<title>Required</title>
-						<description></description>
+						<description>Set form field as required.</description>
 						<defaultValue></defaultValue>
 						<help>This value will add the 'required' attribute to your input, that will be validated if&amp;nbsp;&lt;strong&gt;Use Plugin Script&amp;nbsp;&lt;/strong&gt;is enabled, or if you're validating the form on your own.</help>
 						<properties>
@@ -498,12 +498,12 @@
 			</field>
 			<field>
 				<type>checkbox</type>
-				<id>usePlugintheme_b</id>
+				<id>usePluginTheme_b</id>
 				<iceId></iceId>
-				<title>Use Plugin theme</title>
-				<description>Include styles bundled with the plugin.</description>
+				<title>Use Plugin Theme</title>
+				<description>Include/exclude styles bundled with the plugin.</description>
 				<defaultValue>true</defaultValue>
-				<help>Disable selection if you have Bootstrap included on your site, or if you want to customize the plugin with your own styles.</help>
+				<help>Disable if your site styles already have the styles you wish to use for the plugin form (e.g. if your site uses Bootstrap, you don't need additional styles).</help>
 				<properties>
 					<property>
 						<name>readonly</name>
@@ -524,9 +524,9 @@
 				<id>usePluginScript_b</id>
 				<iceId></iceId>
 				<title>Use Plugin Script</title>
-				<description>Enable form validation.</description>
+				<description>Enable required field validation via bundled plugin script.</description>
 				<defaultValue>true</defaultValue>
-				<help>Disable selection if you want to validate the form on your own.</help>
+				<help>Disable if you want to validate the form on your own or remove the validation.</help>
 				<properties>
 					<property>
 						<name>readonly</name>

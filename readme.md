@@ -46,7 +46,7 @@ The default Groovy controller included in this plugin will lookup a bean from th
 The styles of the Contact Form plugin are based on Bootstrap 5 forms components, using Bootstrap's 
 [build tools](https://getbootstrap.com/docs/5.0/getting-started/build-tools/#sass):
 
-```
+```scss
 @import "functions";
 @import "variables";
 @import "mixins";

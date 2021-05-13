@@ -1,4 +1,4 @@
-<#if contentModel.usePlugintheme_b?? && contentModel.usePlugintheme_b>
+<#if contentModel.usePluginTheme_b?? && contentModel.usePluginTheme_b>
     <link rel="stylesheet" href="/static-assets/plugins/org/craftercms/plugin/contactform/css/contact-form.css" />
 </#if>
 
