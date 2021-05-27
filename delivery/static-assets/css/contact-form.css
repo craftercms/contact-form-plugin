@@ -14,6 +14,16 @@
     display: inline-block;
 }
 
+.form-field-required-indicator::before {
+    content: '*';
+    display: inline-block;
+    color: #dc3545;
+}
+
+.form-field-required-indicator.valid {
+    display: none;
+}
+
 .submit-btn {
     color: #fff;
     background-color: #0d6efd;

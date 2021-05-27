@@ -14,6 +14,18 @@
                 }
 
                 form.classList.add('was-validated');
-            }, false)
+            }, false);
+
+            form.addEventListener('change', function(event) {
+                const formField = event.target;
+                const valid = formField.checkValidity();
+                const fieldLabelValidationIndicator = document.querySelector(`[for="${formField.id}"] .form-field-required-indicator`);
+
+                if (valid) {
+                    fieldLabelValidationIndicator.classList.add('valid');
+                } else {
+                    fieldLabelValidationIndicator.classList.remove('valid');
+                }
+            })
         })
 })()

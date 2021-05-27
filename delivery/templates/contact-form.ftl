@@ -5,11 +5,11 @@
 <#assign validateForm = contentModel.usePluginScript_b?? && contentModel.usePluginScript_b />
 
 <form
-    id="${contentModel.formId_s}"
-    action="${contentModel.url_s}"
-    method="post"
-    class="contact-form <#if validateForm>needs-validation</#if>"
-    <#if validateForm>novalidate</#if>
+        id="${contentModel.formId_s}"
+        action="${contentModel.url_s}"
+        method="post"
+        class="contact-form <#if validateForm>needs-validation</#if>"
+        <#if validateForm>novalidate</#if>
 >
     <#if contentModel.title_s??>
         <div class="form-section">
@@ -19,7 +19,12 @@
 
     <#list contentModel.fields_o.item as field>
         <div class="form-section">
-            <label for="${contentModel.formId_s}-${field.fieldName_s}" class="form-label">${field.fieldLabel_s}</label>
+            <label for="${contentModel.formId_s}-${field.fieldName_s}" class="form-label">
+                ${field.fieldLabel_s}
+                <#if field.required_b && validateForm>
+                    <span class="form-field-required-indicator" />
+                </#if>
+            </label>
             <input
                 type="text"
                 id="${contentModel.formId_s}-${field.fieldName_s}"
@@ -31,7 +36,12 @@
     </#list>
 
     <div class="form-section">
-        <label for="${contentModel.formId_s}-message" class="form-label">${contentModel.messageLabel_s}</label>
+        <label for="${contentModel.formId_s}-message" class="form-label">
+            ${contentModel.messageLabel_s}
+            <#if validateForm>
+                <span class="form-field-required-indicator" />
+            </#if>
+        </label>
         <textarea id="${contentModel.formId_s}-message" name="message" class="form-control" required></textarea>
     </div>
 
