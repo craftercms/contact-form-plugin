@@ -14,7 +14,7 @@
     display: inline-block;
 }
 
-.form-field-required-indicator:before {
+.form-field-required-indicator::before {
     content: '*';
     display: inline-block;
     color: #dc3545;
