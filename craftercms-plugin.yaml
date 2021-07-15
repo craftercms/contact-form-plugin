@@ -9,6 +9,8 @@ plugin:
   id: org.craftercms.plugin.contactform
   name: Contact Form
   tags:
+    - web
+    - freemarker
     - form
     - contact
   version:
@@ -18,12 +20,12 @@ plugin:
   description: A simple contact form
   website:
     name: Contact Form
-    url: TBD
+    url: https://github.com/craftercms/contact-form-plugin
   media:
     screenshots:
       - title: Contact Form
         description: Contact Form Example
-        url: TBD
+        url: https://raw.githubusercontent.com/craftercms/contact-form-plugin/master/.crafter/screenshots/default.png
   developer:
     company:
       name: Crafter Software
@@ -31,7 +33,7 @@ plugin:
       url: https://craftersoftware.com
   build:
     id: c3d2a5444e6a24b5e0481d6ba87901d0b02716c8
-    date: 2019-03-18T00:00:00Z
+    date: 2021-07-15T00:00:00Z
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
