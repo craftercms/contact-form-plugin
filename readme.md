@@ -9,7 +9,7 @@ The plugin can be installed to your site from the Crafter CMS Marketplace
 # Setup
 
 After the plugin has been installed you can add a contact form to any page or component of your site using the
-`Contact Form` content-type.
+`Contact Form` content-type with the id `/component/plugins/org/craftercms/plugin/contactform/contact-form`.
 
 # Configuration
 
