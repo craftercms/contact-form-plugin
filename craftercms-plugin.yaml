@@ -16,8 +16,9 @@ plugin:
   version:
     major: 1
     minor: 0
-    patch: 2
-  description: A simple contact form
+    patch: 3
+  description: A plugin to add contact forms to a site
+  documentation: "https://raw.githubusercontent.com/craftercms/contact-form-plugin/master/readme.md"
   website:
     name: Contact Form
     url: https://github.com/craftercms/contact-form-plugin
