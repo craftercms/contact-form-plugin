@@ -1,10 +1,10 @@
-# Contact Form Plugin for Crafter CMS
+# Contact Form Plugin for CrafterCMS
 
 This is a very simple but highly configurable plugin to add one or more contact forms to your site.
 
 # Installation
 
-The plugin can be installed to your site from the Crafter CMS Marketplace
+The plugin can be installed to your site from the CrafterCMS Marketplace
 
 # Setup
 
